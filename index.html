@@ -3,13 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Film Diary</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f5f1e8;
+            color: #292724;
+            font-family: Arial, "Noto Sans KR", sans-serif;
+        }
+
+        /* 전체 영역 */
+        .container {
+            width: min(1100px, 90%);
+            margin: 0 auto;
+            padding: 80px 0 100px;
+        }
+
+        /* 헤더 */
+        header {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .site-title {
+            margin: 0;
+            font-family: Georgia, serif;
+            font-size: 48px;
+            font-weight: normal;
+            letter-spacing: 5px;
+        }
+
+        .subtitle {
+            margin-top: 15px;
+            color: #817a70;
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+
+        .line {
+            width: 40px;
+            height: 1px;
+            background-color: #292724;
+            margin: 30px auto 0;
+        }
+
+        /* 영화 목록 제목 */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #d8d1c4;
+            padding-bottom: 15px;
+        }
+
+        .section-title {
+            margin: 0;
+            font-family: Georgia, serif;
+            font-size: 22px;
+            font-weight: normal;
+        }
+
+        .movie-count {
+            color: #8b8479;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        /* 영화 갤러리 */
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 55px 35px;
+        }
+
+        /* 영화 카드 */
+        .movie-card {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .poster {
+            width: 100%;
+            aspect-ratio: 2 / 3;
+            overflow: hidden;
+            background-color: #ddd6c9;
+        }
+
+        .poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .movie-card:hover .poster img {
+            transform: scale(1.04);
+        }
+
+        .movie-info {
+            padding-top: 17px;
+        }
+
+        .movie-title {
+            margin: 0;
+            font-family: Georgia, serif;
+            font-size: 19px;
+            font-weight: normal;
+        }
+
+        .movie-meta {
+            margin-top: 8px;
+            color: #8b8479;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+        }
+
+        .rating {
+            margin-top: 10px;
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+
+        /* 푸터 */
+        footer {
+            margin-top: 100px;
+            padding-top: 25px;
+            border-top: 1px solid #d8d1c4;
+            text-align: center;
+            color: #9a9388;
+            font-family: Georgia, serif;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        /* 모바일 */
+        @media (max-width: 700px) {
+            .container {
+                width: 88%;
+                padding-top: 50px;
+            }
+
+            .site-title {
+                font-size: 36px;
+            }
+
+            .movie-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px 18px;
+            }
+
+            .movie-title {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>FILM DIARY</h1>
-    <p>내가 본 영화와 그에 대한 이야기</p>
+    <div class="container">
+
+        <header>
+            <h1 class="site-title">FILM DIARY</h1>
+            <p class="subtitle">a little archive of films</p>
+            <div class="line"></div>
+        </header>
+
+
+        <section>
+
+            <div class="section-header">
+                <h2 class="section-title">Movies</h2>
+                <span class="movie-count">3 films</span>
+            </div>
+
+
+            <div class="movie-grid">
+
+                <!-- 영화 1 -->
+                <a href="#" class="movie-card">
+
+                    <div class="poster">
+                        <img src="https://placehold.co/600x900/e3ddd2/4a4640?text=POSTER"
+                             alt="영화 포스터">
+                    </div>
+
+                    <div class="movie-info">
+                        <h3 class="movie-title">Movie Title</h3>
+                        <p class="movie-meta">2026.08.09</p>
+                        <div class="rating">★★★★★</div>
+                    </div>
+
+                </a>
+
+
+                <!-- 영화 2 -->
+                <a href="#" class="movie-card">
+
+                    <div class="poster">
+                        <img src="https://placehold.co/600x900/e3ddd2/4a4640?text=POSTER"
+                             alt="영화 포스터">
+                    </div>
+
+                    <div class="movie-info">
+                        <h3 class="movie-title">Movie Title</h3>
+                        <p class="movie-meta">2026.08.02</p>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+
+                </a>
+
+
+                <!-- 영화 3 -->
+                <a href="#" class="movie-card">
+
+                    <div class="poster">
+                        <img src="https://placehold.co/600x900/e3ddd2/4a4640?text=POSTER"
+                             alt="영화 포스터">
+                    </div>
+
+                    <div class="movie-info">
+                        <h3 class="movie-title">Movie Title</h3>
+                        <p class="movie-meta">2026.07.21</p>
+                        <div class="rating">★★★★★</div>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            my little movie diary
+        </footer>
+
+    </div>
 
 </body>
 </html>
