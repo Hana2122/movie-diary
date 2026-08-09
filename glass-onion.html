@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>글래스 어니언 | Film Diary</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f5f1e8;
+            color: #292724;
+            font-family: Arial, "Noto Sans KR", sans-serif;
+        }
+
+        .container {
+            width: min(900px, 88%);
+            margin: 0 auto;
+            padding: 70px 0 100px;
+        }
+
+        .top {
+            text-align: center;
+            margin-bottom: 65px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 35px;
+            color: #8b8479;
+            text-decoration: none;
+            font-size: 11px;
+            letter-spacing: 1.5px;
+        }
+
+        .back:hover {
+            color: #292724;
+        }
+
+        .title {
+            margin: 0;
+            font-family: Georgia, serif;
+            font-size: 42px;
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+
+        .original-title {
+            margin-top: 10px;
+            color: #8b8479;
+            font-family: Georgia, serif;
+            font-size: 15px;
+            font-style: italic;
+        }
+
+        .line {
+            width: 40px;
+            height: 1px;
+            background-color: #292724;
+            margin: 25px auto;
+        }
+
+        .date {
+            color: #8b8479;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+
+        .rating {
+            margin-top: 12px;
+            font-size: 15px;
+            letter-spacing: 3px;
+        }
+
+        .movie-header {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 60px;
+            align-items: start;
+            margin-bottom: 80px;
+        }
+
+        .poster img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .movie-info {
+            padding-top: 10px;
+        }
+
+        .info-label {
+            margin: 0 0 10px;
+            color: #9a9388;
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .info-text {
+            margin: 0 0 30px;
+            font-family: Georgia, serif;
+            font-size: 17px;
+        }
+
+        .review-section {
+            border-top: 1px solid #d8d1c4;
+            padding-top: 45px;
+        }
+
+        .review-label {
+            margin-bottom: 30px;
+            font-family: Georgia, serif;
+            font-size: 21px;
+        }
+
+        .review {
+            font-size: 15px;
+            line-height: 2;
+            color: #48443f;
+        }
+
+        .review p {
+            margin: 0 0 25px;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 25px;
+            border-top: 1px solid #d8d1c4;
+            text-align: center;
+            color: #9a9388;
+            font-family: Georgia, serif;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 700px) {
+            .title {
+                font-size: 32px;
+            }
+
+            .movie-header {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .poster {
+                width: 65%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="top">
+
+        <a href="index.html" class="back">
+            ← BACK TO FILMS
+        </a>
+
+        <h1 class="title">글래스 어니언</h1>
+
+        <p class="original-title">
+            Glass Onion: A Knives Out Mystery
+        </p>
+
+        <div class="line"></div>
+
+        <p class="date">
+            WATCHED · 2026
+        </p>
+
+        <div class="rating">★★★★★</div>
+
+    </header>
+
+
+    <main>
+
+        <section class="movie-header">
+
+            <div class="poster">
+                <img src="images/glass-onion.jpg"
+                     alt="글래스 어니언 포스터">
+            </div>
+
+            <div class="movie-info">
+
+                <p class="info-label">TITLE</p>
+                <p class="info-text">나이브스 아웃: 글래스 어니언</p>
+
+                <p class="info-label">ORIGINAL TITLE</p>
+                <p class="info-text">Glass Onion: A Knives Out Mystery</p>
+
+                <p class="info-label">GENRE</p>
+                <p class="info-text">Mystery · Crime · Comedy</p>
+
+                <p class="info-label">MY RATING</p>
+                <p class="info-text">★★★★★</p>
+
+            </div>
+
+        </section>
+
+
+        <section class="review-section">
+
+            <h2 class="review-label">My Review</h2>
+
+            <div class="review">
+
+                <p>
+                    여기에 글래스 어니언 감상문을 적어주세요.
+                </p>
+
+                <p>
+                    영화를 보고 느낀 점과 기억에 남았던 장면,
+                    재미있었던 부분 등을 자유롭게 적어둘 수 있습니다.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        my little movie diary
+    </footer>
+
+</div>
+
+</body>
+</html>
