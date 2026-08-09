@@ -18,14 +18,12 @@
             font-family: Arial, "Noto Sans KR", sans-serif;
         }
 
-        /* 전체 영역 */
         .container {
             width: min(1100px, 90%);
             margin: 0 auto;
             padding: 80px 0 100px;
         }
 
-        /* 헤더 */
         header {
             text-align: center;
             margin-bottom: 70px;
@@ -53,7 +51,6 @@
             margin: 30px auto 0;
         }
 
-        /* 영화 목록 제목 */
         .section-header {
             display: flex;
             justify-content: space-between;
@@ -76,14 +73,12 @@
             letter-spacing: 1px;
         }
 
-        /* 영화 갤러리 */
         .movie-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 55px 35px;
         }
 
-        /* 영화 카드 */
         .movie-card {
             text-decoration: none;
             color: inherit;
@@ -133,7 +128,6 @@
             letter-spacing: 2px;
         }
 
-        /* 푸터 */
         footer {
             margin-top: 100px;
             padding-top: 25px;
@@ -145,7 +139,6 @@
             letter-spacing: 1px;
         }
 
-        /* 모바일 */
         @media (max-width: 700px) {
             .container {
                 width: 88%;
@@ -183,61 +176,114 @@
 
             <div class="section-header">
                 <h2 class="section-title">Movies</h2>
-                <span class="movie-count">1 films</span>
+                <span class="movie-count">6 films</span>
             </div>
 
 
             <div class="movie-grid">
 
-                <!-- 영화 1 -->
+
+                <!-- 물에 빠진 나이프 -->
                 <a href="movie.html" class="movie-card">
 
                     <div class="poster">
                         <img src="images/drowning-love.jpg"
-             alt="물에 빠진 나이프 포스터">
+                             alt="물에 빠진 나이프 포스터">
                     </div>
 
                     <div class="movie-info">
                         <h3 class="movie-title">물에 빠진 나이프</h3>
-                        <p class="movie-meta">2026.06.03</p>
-                        <div class="rating">★★★★☆</div>
-                    </div>
-
-                </a>
-
-
-                <!-- 영화 2 -->
-                <a href="#" class="movie-card">
-
-                    <div class="poster">
-                        <img src="https://placehold.co/600x900/e3ddd2/4a4640?text=POSTER"
-                             alt="영화 포스터">
-                    </div>
-
-                    <div class="movie-info">
-                        <h3 class="movie-title">Movie Title</h3>
-                        <p class="movie-meta">2026.08.02</p>
-                        <div class="rating">★★★★☆</div>
-                    </div>
-
-                </a>
-
-
-                <!-- 영화 3 -->
-                <a href="#" class="movie-card">
-
-                    <div class="poster">
-                        <img src="https://placehold.co/600x900/e3ddd2/4a4640?text=POSTER"
-                             alt="영화 포스터">
-                    </div>
-
-                    <div class="movie-info">
-                        <h3 class="movie-title">Movie Title</h3>
-                        <p class="movie-meta">2026.07.21</p>
+                        <p class="movie-meta">Drowning Love · 2026</p>
                         <div class="rating">★★★★★</div>
                     </div>
 
                 </a>
+
+
+                <!-- 나이브스 아웃 -->
+                <a href="knives-out.html" class="movie-card">
+
+                    <div class="poster">
+                        <img src="images/knives-out.jpg"
+                             alt="나이브스 아웃 포스터">
+                    </div>
+
+                    <div class="movie-info">
+                        <h3 class="movie-title">나이브스 아웃</h3>
+                        <p class="movie-meta">Knives Out · 2026</p>
+                        <div class="rating">★★★★★</div>
+                    </div>
+
+                </a>
+
+
+                <!-- 글래스 어니언 -->
+                <a href="glass-onion.html" class="movie-card">
+
+                    <div class="poster">
+                        <img src="images/glass-onion.jpg"
+                             alt="나이브스 아웃: 글래스 어니언 포스터">
+                    </div>
+
+                    <div class="movie-info">
+                        <h3 class="movie-title">글래스 어니언</h3>
+                        <p class="movie-meta">Glass Onion · 2026</p>
+                        <div class="rating">★★★★★</div>
+                    </div>
+
+                </a>
+
+
+                <!-- 스파이더맨: 홈커밍 -->
+                <a href="homecoming.html" class="movie-card">
+
+                    <div class="poster">
+                        <img src="images/spider-man-homecoming.jpg"
+                             alt="스파이더맨 홈커밍 포스터">
+                    </div>
+
+                    <div class="movie-info">
+                        <h3 class="movie-title">스파이더맨: 홈커밍</h3>
+                        <p class="movie-meta">Spider-Man: Homecoming · 2026</p>
+                        <div class="rating">★★★★★</div>
+                    </div>
+
+                </a>
+
+
+                <!-- 스파이더맨: 파 프롬 홈 -->
+                <a href="far-from-home.html" class="movie-card">
+
+                    <div class="poster">
+                        <img src="images/spider-man-far-from-home.jpg"
+                             alt="스파이더맨 파 프롬 홈 포스터">
+                    </div>
+
+                    <div class="movie-info">
+                        <h3 class="movie-title">스파이더맨: 파 프롬 홈</h3>
+                        <p class="movie-meta">Spider-Man: Far From Home · 2026</p>
+                        <div class="rating">★★★★★</div>
+                    </div>
+
+                </a>
+
+
+                <!-- 스파이더맨: 노 웨이 홈 -->
+                <a href="no-way-home.html" class="movie-card">
+
+                    <div class="poster">
+                        <img src="images/spider-man-no-way-home.jpg"
+                             alt="스파이더맨 노 웨이 홈 포스터">
+                    </div>
+
+                    <div class="movie-info">
+                        <h3 class="movie-title">스파이더맨: 노 웨이 홈</h3>
+                        <p class="movie-meta">Spider-Man: No Way Home · 2026</p>
+                        <div class="rating">★★★★★</div>
+                    </div>
+
+                </a>
+
 
             </div>
 
